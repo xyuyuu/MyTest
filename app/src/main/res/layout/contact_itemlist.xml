@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/background_shape"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/tv_group_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/group_head_shape"
+        android:ellipsize="end"
+        android:paddingVertical="12dp"
+        android:paddingLeft="85dp"
+        android:paddingRight="20dp"
+        android:singleLine="true"
+        android:text="太阳与铁学习打卡群"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_studygroup"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/group_corner_shape"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="5dp"
+        android:text="学习群"
+        android:textColor="@color/group_head_color"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tv_group_title"
+        app:layout_constraintLeft_toLeftOf="@id/tv_group_title"
+        app:layout_constraintTop_toTopOf="@id/tv_group_title" />
+
+    <TextView
+        android:id="@+id/tv_group_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="群主在05月26日发布："
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_group_title" />
+
+    <LinearLayout
+        android:id="@+id/linear_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/contactapp_shape"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_group_input">
+
+        <TextView
+            android:id="@+id/tv_group_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="契约应用"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_contact_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="$100"
+            android:textColor="@color/contactAppMoney"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_countmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="总奖金池"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/liner_contactApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距离开始："
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/group_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/group_corner_shape"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="2dp"
+                android:text="200"
+                android:textColor="@color/contactAppcorner"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text=":"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/group_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/group_corner_shape"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="2dp"
+                android:text="70"
+                android:textColor="@color/contactAppcorner"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text=":"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/group_time3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/group_corner_shape"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="2dp"
+                android:text="70"
+                android:textColor="@color/contactAppcorner"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/contactfoot_sahpe"
+            android:gravity="center_horizontal"
+            android:paddingVertical="7dp"
+            android:text="我要加入"
+            android:textColor="@color/contactAppcorner"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_group_headicon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/head_photo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_group" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:cardCornerRadius="3dp"
+        app:layout_constraintBottom_toBottomOf="@id/img_group_headicon"
+        app:layout_constraintRight_toRightOf="@id/img_group_headicon">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@mipmap/ic_launcher" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_groupMaster_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="太阳与铁"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/img_group_headicon"
+        app:layout_constraintLeft_toRightOf="@+id/img_group_headicon"
+        app:layout_constraintTop_toTopOf="@+id/img_group_headicon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

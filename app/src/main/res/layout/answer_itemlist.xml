@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/corner_video_shape">
+
+    <TextView
+        android:id="@+id/tv_answer1v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/answer_name_shape"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:text="1v1 在线答疑"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:translationZ="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_answer_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/head_photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_max="550dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_answer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/answer_title"
+        android:ellipsize="end"
+        android:lineHeight="20dp"
+        android:maxLines="2"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:text="如何让自己变得更加自律啊啊啊啊啊啊啊"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/img_answer_background"
+        app:layout_constraintTop_toTopOf="@id/img_answer_background" />
+
+    <ImageView
+        android:id="@+id/img_answer_headIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/head_photo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_answer_title" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/img_answer_headIcon"
+        app:layout_constraintRight_toRightOf="@id/img_answer_headIcon">
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="20dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="20dp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/answer_line_shape"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_answer_title" />
+
+    <TextView
+        android:id="@+id/tv_answer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="圈圈圆圆想变扁"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_answer_headIcon" />
+
+    <TextView
+        android:id="@+id/tv_answer_peopleContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:ellipsize="end"
+        android:lineHeight="17dp"
+        android:maxLines="2"
+        android:text="武汉科技大学在读研究生大学期间连续三年年获得对对对对对对对对对"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_answer_name" />
+
+    <ImageView
+        android:id="@+id/img_answer_qaheadIcon"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/head_photo"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_answer_user_content"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_answer_user_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/answer_content_shape"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="5dp"
+        android:text="就是如何开这个解答的呀  ！！！！！！！！！"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/tv_answer_users_count"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toRightOf="@id/img_answer_qaheadIcon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_max="300dp" />
+
+    <ImageView
+        android:id="@+id/img_answer_userIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/head_photo"
+        android:translationZ="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_answer_background"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_answer_userIcon2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/head_photo"
+        android:translationZ="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_answer_background"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_answer_users_count"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:background="@drawable/answer_foot_shape"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="10dp"
+        android:text="2人正在排队"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_answer_userIcon2"
+        app:layout_constraintLeft_toRightOf="@id/img_answer_userIcon"
+        app:layout_constraintTop_toTopOf="@+id/img_answer_userIcon2" />
+
+    <TextView
+        android:id="@+id/tv_green_corner"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/greencorner_shape"
+        app:layout_constraintBottom_toBottomOf="@id/tv_answer_users_count"
+        app:layout_constraintLeft_toRightOf="@+id/img_answer_userIcon2"
+        app:layout_constraintTop_toTopOf="@id/tv_answer_users_count" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
